@@ -1,0 +1,24 @@
+{
+  "name": "cypress",
+  "version": "2.1.0",
+  "description": "DPM Cypress Tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx cypress open",
+    "test": "npx cypress run"
+  },
+  "author": "Frox",
+  "license": "SEE LICENSE IN license.md",
+  "devDependencies": {
+    "cypress": "13.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^4.1.1",
+    "cypress-xpath": "^1.6.0",
+    "typescript": "4.9.5",
+    "react-scripts": "5.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "./integration/tmp"
+  }
+}
